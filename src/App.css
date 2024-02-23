@@ -2,37 +2,65 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url('C:\Users\karma\nimbus\landing\src\Assets\bg.jpg');
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image horizontally and vertically */
+  background-attachment: fixed; /* Keep the background fixed when scrolling */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.first-heading {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  text-align: center;
+  font-size: 5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; /* Change color to match your design */
+  text-decoration: none; /* Remove underlines */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-items {
+  display: flex;
 }
+
+.nav-link {
+  margin-left: 10px;
+  padding: 8px 15px;
+  color: #333; /* Change color to match your design */
+  text-decoration: none; /* Remove underlines */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #555; /* Change color on hover */
+}
+
+
+
