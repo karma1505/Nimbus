@@ -1,20 +1,26 @@
+/* App.css */
+
 .App {
   text-align: center;
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
   background-image: url('C:\Users\karma\nimbus\landing\src\Assets\bg.jpg');
-  background-size: cover; /* Cover the entire viewport */
-  background-position: center; /* Center the image horizontally and vertically */
-  background-attachment: fixed; /* Keep the background fixed when scrolling */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .first-heading {
-  font-family: 'Poppins', sans-serif;
   position: relative;
-  text-align: center;
+  text-align: center; /* Center the text horizontally */
   font-size: 5rem;
+  color: #333;
+  margin-top: 6rem;
 }
 
 /* NAVBAR */
@@ -42,8 +48,8 @@ body {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333; /* Change color to match your design */
-  text-decoration: none; /* Remove underlines */
+  color: #333;
+  text-decoration: none;
 }
 
 .nav-items {
@@ -53,14 +59,51 @@ body {
 .nav-link {
   margin-left: 10px;
   padding: 8px 15px;
-  color: #333; /* Change color to match your design */
-  text-decoration: none; /* Remove underlines */
+  color: #333;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #555; /* Change color on hover */
+  color: #555;
 }
 
+/* ABOUT US */
+.about-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+}
 
+.content {
+  position: relative; /* Add position relative to use z-index */
+  max-width: 750px;
+  padding: 20px;
+  text-align: center;
+  opacity: 0; /* Initially set opacity to 0 */
+  animation: fadeIn 1.5s ease-in-out forwards; /* Apply the fadeIn animation */
+}
 
+.card {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    opacity: 1; /* End with opacity 1 */
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "../App.css";
 
 const Navbar = () => {
@@ -20,12 +21,13 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
-        <div className="logo">Nimbus</div>
+        <div className="logo">
+          <Link to="/">Nimbus</Link> {/* Use Link with the appropriate path */}
+        </div>
         <div className="nav-items">
-          <a href="#home" className="nav-link">Home</a>
-          <a href="#services" className="nav-link">Services</a>
-          <a href="#portfolio" className="nav-link">Portfolio</a>
-          <a href="#contact" className="nav-link">Contact</a>
+          <Link to="/services" className="nav-link">Services</Link>
+          <Link to="/portfolio" className="nav-link">Portfolio</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
         </div>
       </div>
     </nav>
