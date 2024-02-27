@@ -15,95 +15,111 @@ body {
   background-repeat: no-repeat;
 }
 
+/* App.css */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+}
+
+.App {
+  flex: 1; /* Allow the content to grow to fill available space */
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+.footer a {
+  margin: 0 10px; /* Add some spacing between icons */
+  color: #333; /* Change icon color */
+  text-decoration: none;
+  color:white; /* Remove underline */
+}
+
+.footer a:hover {
+  color: #000000; /* Change icon color on hover */
+}
+
 .first-heading {
   position: relative;
   text-align: center; /* Center the text horizontally */
   font-size: 5rem;
-  color: #333;
-  margin-top: 6rem;
+  color: white;
+  margin-top: 4.5rem;
+  animation: fadeIn 2s ease;
 }
 
 /* NAVBAR */
 
+/* Navbar.css */
 .navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-}
-
-.scrolled {
-  background-color: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
-}
-
-.navbar-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
-  text-decoration: none;
 }
 
-.nav-items {
+.nav-links {
+  list-style: none;
   display: flex;
 }
 
-.nav-link {
-  margin-left: 10px;
-  padding: 8px 15px;
-  color: #333;
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: white;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-  color: #555;
+.nav-links li a:hover {
+  color: #58a6ff;
 }
 
 /* ABOUT US */
-.about-us-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 45vh;
-}
-
-.content {
-  position: relative; /* Add position relative to use z-index */
-  max-width: 750px;
-  padding: 20px;
-  text-align: center;
-  opacity: 0; /* Initially set opacity to 0 */
-  animation: fadeIn 1.5s ease-in-out forwards; /* Apply the fadeIn animation */
-}
+/* Card.css */
 
 .card {
-  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
-  border-radius: 10px; /* Rounded corners */
+  position: relative;
+  text-align: center; /* Center-align text */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border-radius: 25px; /* Rounded corners */
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  margin: 20px auto; /* Automatically center the card horizontally */
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  animation: fadeIn 2s ease; /* Animation */
 }
 
-p {
-  font-size: 1.2rem;
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
 
+/* Animation keyframes */
 @keyframes fadeIn {
   from {
-    opacity: 0; /* Start with opacity 0 */
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-    opacity: 1; /* End with opacity 1 */
+    opacity: 1;
+    transform: translateY(0);
   }
 }
