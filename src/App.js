@@ -17,7 +17,7 @@ function App() {
         <p>Whether you need a simple business website or a complex e-commerce platform, we have the skills and experience to bring your vision to life.</p>
       </div>
       <footer className="footer">
-        <a href="https://www.instagram.com"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
+        <a href="https://www.instagram.com/nimbuswebdev/"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
         <a href="https://twitter.com"><FontAwesomeIcon icon={faXTwitter} size="2x" /></a>
       </footer>
     </div>
