@@ -27,7 +27,7 @@ body {
 }
 
 .footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -96,6 +96,17 @@ body {
 }
 
 /* ABOUT US */
+.services-heading {
+  position: relative;
+  text-align: start;
+  font-size: 2rem;
+  color: black;
+  margin-top: 3.5rem;
+  margin-left: 5rem;
+  animation: fadeIn 2s ease;
+}
+
+
 .services-skills-container {
   margin-top: 27rem;
   background-color: white; /* Add white background */
@@ -106,6 +117,7 @@ body {
 .services-content {
   display: flex;
   padding: 10px; /* Add padding */
+  margin-left: 5rem;
 }
 
 .services-buttons {
@@ -120,7 +132,7 @@ body {
   padding: 10px;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -130,16 +142,19 @@ body {
 
 .subitems-container {
   margin-left: 20px;
+  margin-left: 15rem;
 }
 
 .subitems {
   list-style: none;
   padding: 0;
+
 }
 
 .subitems li {
   margin-bottom: 5px; /* Add vertical margin */
-  padding: 5px 0; /* Add vertical padding */
+  padding: 2px 0; /* Add vertical padding */
+
 }
 
 
