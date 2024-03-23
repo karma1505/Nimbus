@@ -96,6 +96,57 @@ body {
 }
 
 /* ABOUT US */
+.services-skills-container {
+  margin-top: 27rem;
+  background-color: white; /* Add white background */
+  padding: 20px; /* Add padding for better visual appeal */
+}
+
+
+.services-content {
+  display: flex;
+  padding: 10px; /* Add padding */
+}
+
+.services-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align buttons to the left */
+  margin-right: 20px; /* Add right margin */
+}
+
+.services-button {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.services-button.active {
+  background-color: #ddd;
+}
+
+.subitems-container {
+  margin-left: 20px;
+}
+
+.subitems {
+  list-style: none;
+  padding: 0;
+}
+
+.subitems li {
+  margin-bottom: 5px; /* Add vertical margin */
+  padding: 5px 0; /* Add vertical padding */
+}
+
+
+.arrow {
+  margin-right: 5px;
+}
+
 /* Card.css */
 
 .card {
