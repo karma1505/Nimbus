@@ -4,7 +4,6 @@ import { faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import Navbar from "./Components/Navbar"; 
 import ServicesSkills from "./Components/Services";
 import "./App.css"; 
-import Services from "./Components/Services";
 
 function App() {
   return (
