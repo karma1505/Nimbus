@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 const ServicesSkills = () => {
     const [activeIndex, setActiveIndex] = useState(0); // State to manage the active index
@@ -8,8 +8,11 @@ const ServicesSkills = () => {
         setActiveIndex(activeIndex === index ? null : index);
     };
 
+    // Ref for the Services section
+    const servicesRef = useRef(null);
+
     return (
-        <div className="services-skills-container">
+        <div ref={servicesRef} className="services-skills-container">
             <div className='services-heading'>
                 <h1>OUR SERVICES</h1>
             </div>
