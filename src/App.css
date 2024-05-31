@@ -13,19 +13,20 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  z-index: -999999;
+  z-index: 999999;
+  background-color: black; 
 }
 
-/* App.css */
-
+/* Ensure the body takes up at least the full height of the viewport */
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+  min-height: 100vh;
 }
 
+/* Allow the content to grow to fill available space */
 .App {
-  flex: 1; /* Allow the content to grow to fill available space */
+  flex: 1;
 }
 
 .footer {
@@ -39,26 +40,26 @@ body {
   padding: 10px 0;
 }
 
-
 .footer a {
-  margin: 0 10px; /* Add some spacing between icons */
-  color: #333; /* Change icon color */
+  margin: 0 10px;
+  color: #333;
   text-decoration: none;
-  color:white; /* Remove underline */
+  color: white;
 }
 
 .footer a:hover {
-  color: #000000; /* Change icon color on hover */
+  color: #000000;
 }
 
 .first-heading {
   position: relative;
-  text-align: center; /* Center the text horizontally */
+  text-align: center;
   font-size: 5rem;
   color: white;
   margin-top: 4.5rem;
   animation: fadeIn 2s ease;
 }
+
 
 /* NAVBAR */
 
@@ -98,6 +99,72 @@ body {
 }
 
 /* ABOUT US */
+.services-heading {
+  position: relative;
+  text-align: start;
+  font-size: 2rem;
+  color: black;
+  margin-top: 3.5rem;
+  margin-left: 5rem;
+  animation: fadeIn 2s ease;
+}
+
+
+.services-skills-container {
+  margin-top: 27rem;
+  background-color: white; /* Add white background */
+  padding: 20px; /* Add padding for better visual appeal */
+}
+
+
+.services-content {
+  display: flex;
+  padding: 10px; /* Add padding */
+  margin-left: 5rem;
+}
+
+.services-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align buttons to the left */
+  margin-right: 20px; /* Add right margin */
+}
+
+.services-button {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.services-button.active {
+  background-color: #ddd;
+}
+
+.subitems-container {
+  margin-left: 20px;
+  margin-left: 15rem;
+}
+
+.subitems {
+  list-style: none;
+  padding: 0;
+
+}
+
+.subitems li {
+  margin-bottom: 5px; /* Add vertical margin */
+  padding: 2px 0; /* Add vertical padding */
+
+}
+
+
+.arrow {
+  margin-right: 5px;
+}
+
 /* Card.css */
 
 .card {
